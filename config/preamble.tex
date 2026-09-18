@@ -21,7 +21,7 @@
 
 % Graphs and diagrams
 \usepackage{tikz}
-\usetikzlibrary{positioning,arrows.meta,trees}
+\usetikzlibrary{positioning,arrows.meta,trees,shapes.geometric}
 
 % Tables and layout
 \usepackage{booktabs}
@@ -47,15 +47,37 @@
   showstringspaces=false
 }
 
+% Visual callout boxes
+\usepackage[most]{tcolorbox}
+\newtcolorbox{alertblock}[2][]{
+  colback=red!5!white,
+  colframe=red!75!black,
+  fonttitle=\bfseries\small,
+  title={#2},
+  boxrule=0.8pt,
+  arc=3pt,
+  #1
+}
+\newtcolorbox{noteblock}[2][]{
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  fonttitle=\bfseries\small,
+  title={#2},
+  boxrule=0.8pt,
+  arc=3pt,
+  #1
+}
+
 % Numbered formal environments by chapter
 \theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{theorem}{Teorema}[chapter]
 \newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{property}[theorem]{Property}
+\newtheorem{property}[theorem]{Propriet\`a}
 
 \theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{example}[theorem]{Example}
+\newtheorem{definition}[theorem]{Definizione}
+\newtheorem{example}[theorem]{Esempio}
+\newtheorem{remark}[theorem]{Nota}
 
 % Links and bookmarks: hyperref is loaded after the main packages.
 \usepackage[colorlinks=true,hypertexnames=false,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
