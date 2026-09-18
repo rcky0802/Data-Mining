@@ -1,0 +1,33 @@
+\chapter{Introduction to Data Mining}
+\label{ch:introduction-to-data-mining}
+
+\section{Overview and Fundamental Concepts}
+
+Data Mining represents the computational process of discovering patterns, anomalies, and actionable knowledge from vast repositories of data. It operates at the intersection of machine learning, statistics, and database systems.
+
+\begin{definition}[Data Mining]
+Data Mining is the non-trivial extraction of implicit, previously unknown, and potentially useful information from large volumes of structured or unstructured data.
+\end{definition}
+
+\section{The Knowledge Discovery (KDD) Process}
+
+The standard Knowledge Discovery in Databases (KDD) pipeline consists of an iterative series of stages:
+\begin{enumerate}
+    \item \textbf{Data Cleaning:} Removing noise, outliers, and handling missing values.
+    \item \textbf{Data Integration:} Combining data from multiple heterogeneous sources.
+    \item \textbf{Data Selection and Transformation:} Selecting task-relevant attributes and applying aggregation or normalization.
+    \item \textbf{Data Mining:} Applying intelligent algorithms to extract patterns and models.
+    \item \textbf{Pattern Evaluation and Knowledge Presentation:} Interpreting patterns and translating findings into domain-specific decisions.
+\end{enumerate}
+
+\section{Core Data Mining Tasks}
+
+Data mining tasks are commonly divided into two broad categories:
+\begin{itemize}
+    \item \textbf{Predictive Tasks:} Use existing variables to predict unknown or future values of target attributes (e.g., classification, regression).
+    \item \textbf{Descriptive Tasks:} Find human-interpretable patterns describing the underlying data structure (e.g., clustering, association rule mining, anomaly detection).
+\end{itemize}
+
+\begin{example}[Association Analysis]
+In a market basket analysis setting, the goal is to identify items frequently bought together. Given items $A$ and $B$, an association rule $A \implies B$ is evaluated through metrics such as support and confidence.
+\end{example}
